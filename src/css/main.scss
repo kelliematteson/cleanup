@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+//variables
+//#3e68ff;
+$background-color: #fdf5df;
+$background-card-color: #fdf1fe;
+$primary-color: #5ebec4;
+$secondary-color: #f92c85;
+$header-font: 'Mochiy Pop P One', sans-serif;
+$btnColor: #f92c85;
+$callToActionColor: #3e68ff;
+
+body {
+    color: $primary-color;
+    text-align: center;
+    background-color: #fff;
+    .btn{
+        box-sizing: border-box;
+        border: none;
+        background-color: transparent;
+        font-family: inherit;
+        padding: 0;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $btnColor;
+        color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+        padding: .25em;
+        min-width: 10ch;
+        min-height: 44px;
+        text-align: center;
+        line-height: 1.1;
+        transition: 220ms all ease-in-out;
+        &:hover,
+        &:active {
+            background-color: scale-color($btnColor, $lightness: -20%);
+          }
+        &:focus {
+            outline-style: solid;
+            outline-color: transparent;
+            box-shadow: 0 0 0 4px scale-color($btnColor, $lightness: -40%);
+          }
+    }
+    .index {
+        color: $primary-color;
+        h3{
+            font-family: $header-font;
+        }
+        .about__clean{
+            color: $secondary-color;
+        }
+        a{
+            text-decoration: none;
+            color: $primary-color;
+        }
+        
+       .card__display{
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           justify-content: flex-start;
+           align-items: flex-start;
+           
+       }
+       .card {
+        width: 300px;
+        margin-top: 1em;
+        margin-left: 1em;
+        padding: .5em;
+        background-color: #fdfcf1;
+        border: 2px solid $secondary-color;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        a{
+            color: #555555;
+        }
+        .card__details{
+            color: #555555;
+        }
+        .card__location{
+            color: black;
+            font-weight: bold;
+        }
+        .card__description{
+            color: black;
+            font-weight: bold;
+        }
+        .card__need{
+            color: $callToActionColor;
+            font-weight: bolder;
+        }
+        .card__edit{
+            color: $primary-color;
+            font-weight: bolder;
+        }
+    }
+   
+    .trash{
+        width: 30%;
+        
+    }
+    
+    
+}
+.about{
+    color: #555555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    .about__details{
+        width: 65%;
+        
+    }
+}
+
+}

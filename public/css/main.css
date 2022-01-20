@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+body {
+  color: #5ebec4;
+  text-align: center;
+  background-color: #fff;
+}
+body .btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f92c85;
+  color: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  padding: 0.25em;
+  min-width: 10ch;
+  min-height: 44px;
+  text-align: center;
+  line-height: 1.1;
+  -webkit-transition: 220ms all ease-in-out;
+  transition: 220ms all ease-in-out;
+}
+body .btn:hover, body .btn:active {
+  background-color: #e40667;
+}
+body .btn:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  -webkit-box-shadow: 0 0 0 4px #ab054d;
+          box-shadow: 0 0 0 4px #ab054d;
+}
+body .index {
+  color: #5ebec4;
+}
+body .index h3 {
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+body .index .about__clean {
+  color: #f92c85;
+}
+body .index a {
+  text-decoration: none;
+  color: #5ebec4;
+}
+body .index .card__display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+body .index .card {
+  width: 300px;
+  margin-top: 1em;
+  margin-left: 1em;
+  padding: 0.5em;
+  background-color: #fdfcf1;
+  border: 2px solid #f92c85;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+body .index .card a {
+  color: #555555;
+}
+body .index .card .card__details {
+  color: #555555;
+}
+body .index .card .card__location {
+  color: black;
+  font-weight: bold;
+}
+body .index .card .card__description {
+  color: black;
+  font-weight: bold;
+}
+body .index .card .card__need {
+  color: #3e68ff;
+  font-weight: bolder;
+}
+body .index .card .card__edit {
+  color: #5ebec4;
+  font-weight: bolder;
+}
+body .index .trash {
+  width: 30%;
+}
+body .about {
+  color: #555555;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .about .about__details {
+  width: 65%;
+}
