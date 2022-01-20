@@ -11,7 +11,7 @@ class Index extends React.Component {
             >
                 <div className="intro">
                     <a href="/clean/new"><h3 className="about__clean">Create a new clean up request</h3></a>
-                    <a href="/clean/about"><h3>About Clean Up</h3></a>
+                    <a href="/clean/about"><h4>ABOUT CLEAN UP</h4></a>
                     <img className="trash" src="/images/trash.jpg"/>
                 </div>
                 <div className="card__display">

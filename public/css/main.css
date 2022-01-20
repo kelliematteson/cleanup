@@ -125,4 +125,7 @@ body .about {
 }
 body .about .about__details {
   width: 65%;
+  background-color: #fdfcf1;
+  border: 2px solid #f92c85;
+  padding: 1em;
 }

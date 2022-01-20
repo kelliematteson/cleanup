@@ -114,7 +114,9 @@ body {
     
     .about__details{
         width: 65%;
-        
+        background-color: #fdfcf1; 
+        border: 2px solid $secondary-color;
+        padding: 1em;
     }
 }
 
