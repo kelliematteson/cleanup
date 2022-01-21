@@ -5,6 +5,7 @@ const methodOverride = require('method-override');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const mongoURI = process.env.MONGODB_URI;
+const db = mongoose.connection;
 const Clean = require('./models/clean');
 
 // Middleware Below
@@ -21,8 +22,10 @@ mongoose.connect(mongoURI, {
     useUnifiedTopology: true
 });
 
-mongoose.connection.once('connected', () => console.log('Mongoose is all ready'));
-
+// mongoose.connection.once('connected', () => console.log('Mongoose is all ready'));
+db.on('open', () => {
+    console.log('Mongo is Connected');
+});
 
 // Render CRUD views Below
 // NEW
