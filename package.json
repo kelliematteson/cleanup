@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "16.13.2"
+  },
   "name": "clean-it",
   "version": "1.0.0",
   "description": "",
@@ -181,9 +184,6 @@
     "whatwg-url": "^11.0.0",
     "wrappy": "^1.0.2",
     "yallist": "^2.1.2"
-  },
-  "engines": {
-    "node": "16.13.2"
   },
   "devDependencies": {
     "gulp": "^4.0.2",

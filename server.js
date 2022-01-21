@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 const app = express();
 const PORT = process.env.PORT || 3000;
-const url = process.env_MONGO_URI;
 const Clean = require('./models/clean');
 
 // Middleware Below
@@ -16,12 +15,12 @@ app.use(express.static('public'));
 
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
-
-mongoose.connect(url, {
+let uri = process.env.MONGO_URI;
+mongoose.connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
-
+console.log(uri);
 mongoose.connection.once('connected', () => console.log('Mongoose is all ready'));
 
 
