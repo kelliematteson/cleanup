@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 const app = express();
 const PORT = process.env.PORT || 3000;
-const mongoURI = process.env.MONGO_URI;
+const mongoURI = process.env.MONGODB_URI;
 const Clean = require('./models/clean');
 
 // Middleware Below
