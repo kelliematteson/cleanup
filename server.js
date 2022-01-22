@@ -21,7 +21,7 @@ mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
-
+console.log(mongoURI);
 // mongoose.connection.once('connected', () => console.log('Mongoose is all ready'));
 db.on('open', () => {
     console.log('Mongo is Connected');
